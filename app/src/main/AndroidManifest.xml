@@ -6,11 +6,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/img"
+        android:icon="@drawable/agentlik_tizimi_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/agentlik_tizimi_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Maktablar_uz"
+            android:exported="false" />
+        <activity
+            android:name=".Maktabga_qabul"
+            android:exported="false" />
         <activity
             android:name=".Qayta_aaloqa"
             android:exported="false" />

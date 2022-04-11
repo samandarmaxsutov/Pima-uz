@@ -50,106 +50,265 @@
         android:id="@+id/nested_scroll"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="25dp"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="290dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:layout_height="200dp"
-                    app:cardCornerRadius="25dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            app:cardCornerRadius="5dp">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/prezident_maktabi"/>
-                </androidx.cardview.widget.CardView>
-                <TextView
-                    android:text="Prezident maktablari"
-                    android:gravity="center"
-                    android:textSize="30sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="8dp"
-                  />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="25dp"
-            android:layout_margin="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_height="match_parent">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="290dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:layout_height="200dp"
-                    app:cardCornerRadius="25dp">
-                    <ImageView
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/alike"
+                    android:fontFeatureSettings="@string/hide_bottom_view_on_scroll_behavior"
+                    android:text=" Maktablar"
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="30sp"
+                    android:theme="@style/AppTheme.AppBarOverlay" />"
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/ijod_maktabi"/>
-                </androidx.cardview.widget.CardView>
-                <TextView
-                    android:text="Ijod maktablari"
-                    android:gravity="center"
-                    android:textSize="30sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="8dp"
-                  />
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="289dp"
+                                    android:layout_height="199dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="15dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/prezident_maktabi" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Prezident maktablari"
+                                    android:textColor="#223180"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Prezident maktabi ixtisoslashtirilgan davlat umumta’lim muassasasi hisoblanib, uning faoliyati
+                                        yuqori malakali mutaxassislarni tayyorlash uchun iqtidorli bolalarni aniqlash va o‘qitishni
+                                         ta’minlashga qaratilgan.14 ta Prezident maktabi O‘zbekiston Respublikasi
+                                         Prezidentining 2019-yil 20-fevraldagi «Prezident maktablarini tashkil etish chora-tadbirlari
+                                          to‘g‘risida»gi PQ-4199-qarori asosida Qoraqalpog‘iston Respublikasi, viloyatlar va Toshkent
+                                          shahrida tashkil qilinadi.2019-yilda Prezident maktab-internatlari Toshkent, Xiva,
+                                          Nukus va Namanganda ochildi..."
+                                    android:textColor="#223180"
+                                    android:textSize="18sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.8"
+                                    android:background="#EAEFEE"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10dp"
+                                        android:gravity="center"
+                                        android:text="Davomini o'qish"
+                                        android:textColor="#6200EA"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="289dp"
+                                    android:layout_height="199dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="15dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ijod_maktabi" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Ijod maktablari"
+                                    android:textColor="#223180"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Ijod maktablari tashkil etilishining maqsadi va vazifasi:Badiiy adabiyot
+                                        va ijod sohalariga qiziqadigan, iqtidorli yoshlarni isteʼdodni yana-da rivojlantirish uchun
+                                         barcha hududlarda sharoit yaratish.Iqtidorli yoshlarga adabiyot, tilshunoslik va chet tilini
+                                         mukammal oʻrgatish."
+                                    android:textColor="#223180"
+                                    android:textSize="18sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.8"
+                                    android:background="#EAEFEE"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10dp"
+                                        android:gravity="center"
+                                        android:text="Davomini o'qish"
+                                        android:textColor="#6200EA"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="289dp"
+                                    android:layout_height="199dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="15dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ixtisoslashtirilgan_maktab" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Ixtisoslashtirilgan \nmaktablar"
+                                    android:textColor="#223180"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="Ixtisoslashtirilgan maktablar
+                                        Ulugʻ allomalar Muhammad al-Xorazmiy, Mirzo Ulugʻbek, Abu Ali ibn Sinolarning buyuk va bebaho merosini qadrlash,
+                                        uni yosh avlod ongiga chuqur singdirish, oʻquvchilarning aniq fanlarning yuksak marralarini zabt etishiga koʻmaklashish,
+                                        axborot-kommunikatsiya texnologiyalari sohasidagi iqtidorlarini aniqlash hamda qobiliyatlarini roʻyobga chiqarish
+                                         hamda fundamental fan asoslarini egallashi uchun tegishli shart-sharoitlar yaratish;"
+                                    android:textColor="#223180"
+                                    android:textSize="18sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.8"
+                                    android:background="#EAEFEE"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10dp"
+                                        android:gravity="center"
+                                        android:text="Davomini o'qish"
+                                        android:textColor="#6200EA"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
-         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="25dp"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="290dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:layout_height="200dp"
-                    app:cardCornerRadius="25dp">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/ixtisoslashtirilgan_maktab"/>
-                </androidx.cardview.widget.CardView>
-                <TextView
-                    android:text="Ixtisoslashtirilgan maktablar"
-                    android:gravity="center"
-                    android:textSize="30sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="8dp"
-                  />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

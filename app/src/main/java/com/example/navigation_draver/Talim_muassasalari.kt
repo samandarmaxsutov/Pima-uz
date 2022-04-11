@@ -11,6 +11,7 @@ class Talim_muassasalari : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_talim_muassasalari)
+        window.decorView.systemUiVisibility=View.SYSTEM_UI_FLAG_FULLSCREEN
         init()
     }
     private fun init(){
@@ -29,6 +30,10 @@ class Talim_muassasalari : AppCompatActivity() {
 intent= Intent(this,MainActivity::class.java)
         startActivity(intent)
         return true
+    }
+    override fun onBackPressed() {
+        val intent= Intent(this,MainActivity::class.java)
+        startActivity(intent)
     }
 
 }
